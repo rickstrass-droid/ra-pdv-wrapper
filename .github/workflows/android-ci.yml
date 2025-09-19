@@ -28,11 +28,11 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
-      - name: Gradle assembleDebug
+      - name: Gradle :app:assembleDebug
         uses: gradle/gradle-build-action@v3
         with:
-          arguments: assembleDebug
           build-root-directory: android-app
+          arguments: :app:assembleDebug
           gradle-version: 8.0.2
 
       - name: Upload APK artifact
