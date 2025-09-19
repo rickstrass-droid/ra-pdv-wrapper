@@ -1,18 +1,8 @@
-pluginManagement {
+// build.gradle (raiz do projeto)
+buildscript {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
     }
 }
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-
-rootProject.name = "RA-PDV-Wrapper"
-include(":app")
