@@ -36,8 +36,9 @@ jobs:
           gradle-version: 8.0.2
 
       - name: Upload APK artifact
-        if: always()
+        if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug.apk
-          path: android-app/app/build/outputs/apk/debug/app-debug.apk
+          name: RA-PDV-Wrapper-debug
+          path: |
+            **/build/outputs/**/*.apk
