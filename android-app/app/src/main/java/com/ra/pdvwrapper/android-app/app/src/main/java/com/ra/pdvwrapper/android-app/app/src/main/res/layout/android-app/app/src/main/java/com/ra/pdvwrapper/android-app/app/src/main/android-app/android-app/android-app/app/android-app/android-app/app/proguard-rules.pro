@@ -1,0 +1,2 @@
+-keep class com.ra.pdvwrapper.PosBridge { *; }
+-keepclassmembers class * { @android.webkit.JavascriptInterface <methods>; }
